@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_bisu_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/vision"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mission"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="serif"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="8sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BALILIHAN CAMPUS"
+            android:background="#FFC300"
+            android:textAlignment="center"
+            android:textColor="#572B82"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:textSize="24sp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CCIS\nATTENDANCE CHECKER"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center_horizontal">
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/mayorButton"
+                 android:layout_width="120dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/active_btn"
+                 android:textColor="@color/white"
+                 android:layout_margin="10dp"
+                 android:text="Class Mayor"/>
+
+             <androidx.appcompat.widget.AppCompatButton
+                 android:id="@+id/studentButton"
+                 android:layout_width="120dp"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/inactive_btn"
+                 android:layout_margin="10dp"
+                 android:textColor="@color/white"
+                 android:layout_marginStart="30dp"
+                 android:text="Student"/>
+
+         </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminateTint="#FFC300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

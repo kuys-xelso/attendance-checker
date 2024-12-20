@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CCIS Attendance Checker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_pass_instructions">Your password must be at least 8 characters and should include a combination of numbers, letters and special characters.</string>
+    <string name="vision"> <b>Vision</b> \n A premier Science and Technology University for the formation of world-class virtuous human resource for sustainable development in Bohol and the country. </string>
+    <string name="mission"> <b>Mission</b> \n BISU is committed to provide quality higher education in the arts and sciences, as well as in the professional and technological fields; undertake
+research and development and extension services for the sustainable development in Bohol and the country. </string>
+</resources>

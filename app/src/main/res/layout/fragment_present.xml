@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresentFragment">
+
+    <TextView
+        android:id="@+id/noStudentsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Students are Present"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/darker_gray" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/present_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</FrameLayout>

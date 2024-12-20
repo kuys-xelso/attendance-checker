@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="15dp"
+    android:background="@drawable/item_event_bg">
+
+    <TextView
+        android:id="@+id/item_event_name"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="0dp"
+        android:text="Event Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_event_name">
+
+            <TextView
+                android:id="@+id/displayTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cut off Time:  "
+                android:textSize="16sp"
+                android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/item_cutOffTime"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/displayTv"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/item_options"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_options"
+            />
+
+</RelativeLayout>
+

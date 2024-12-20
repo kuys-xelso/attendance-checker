@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MayorFragment"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="30dp">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Class Mayor Login"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/input_bg"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/icon_email"
+                    android:inputType="text"
+                    android:textSize="16sp"
+                    android:hint="Email"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"/>
+
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_bg"
+                    android:drawablePadding="8dp"
+                    android:drawableStart="@drawable/icon_lock"
+                    android:drawableEnd="@drawable/icon_visibility_off"
+                    android:hint="Password"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/forgetPassLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Forget Password"
+                    android:textColor="#FFC300"
+                    android:layout_gravity="end"
+                    android:padding="5dp"/>
+
+                <Button
+                    android:id="@+id/button_login"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:text="Login"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Create an account?"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:id="@+id/registerLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="   Sign up"
+                        android:textColor="#FFC300"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:indeterminateTint="#FFC300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

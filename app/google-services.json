@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "120489524763",
+    "project_id": "ccis-attendance-checker",
+    "storage_bucket": "ccis-attendance-checker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120489524763:android:e49f235b39019f253582be",
+        "android_client_info": {
+          "package_name": "com.example.ccisattendancechecker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjbJWsa-As8DCwn1uy9wx_QOmxOkrwct0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zxing_transparent"
+    tools:context=".StudentFragment">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_white"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Student Information"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/studentIdEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input_bg"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:hint="Student ID"
+            android:fontFamily="sans-serif"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/courseSpinner"
+            android:background="@drawable/input_bg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="45dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/yrSpinner"
+                android:background="@drawable/input_bg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="45dp"
+                android:hint="Year and Section"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/sectionSpinner"
+                android:background="@drawable/input_bg"
+                android:layout_width="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_height="45dp"
+                android:hint="Year and Section"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button_generate"
+            android:layout_marginTop="15dp"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:text="Generate"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
